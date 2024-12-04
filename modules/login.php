@@ -30,7 +30,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             if ($sqlData['PHOTO_URL'] == "") {
                 $sqlData['PHOTO_URL'] = "default-avatar.png";
             }
-
+            //Acá están la variable USER_TYPE para los rangos o roles dentro de la app
             if ($sqlData['PERMISSION'] == 1) {
                 $sqlData['USER_TYPE'] = 'admin';
                 $sqlData['PHOTO_URL'] = "admin-avatar.png";
